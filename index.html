@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Your CSS (after Bootstrap so it can oerride)-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Your CSS (after Bootstrap so it can override) -->
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FIZA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/poli10.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/asramap1.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/lab1.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Marquee-->
+    <div class="bg-dark text-light py-2 overflow-hidden fs-4 fw-bold shadow">
+        <marquee behavior="scroll" director="left" scrollamount="6">
+            WELCOME TO MY POLYTECHNIC LIFE!
+        </marquee>
+    </div>
+    <!-- SECTION -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="images/blkg.jpg" class="img-fluid rounded-circle shadow" alt="JTMK">
+            </div>
+            <div class="col-md-9 d-flex align-items-center fs-4 fst-italic">
+                <p>
+                    Hey guyss !
+                    I'm Nur Shyafiza Adyawiah Binti Romizam.<br>
+                    My course is Information Technology and Communication.<br>
+                    I love exploring tech stuff, hanging out with friends, and capturing little moments that make
+                    student life fun.<br>
+                    Between assignments, projects, and late-night study vibes, I'm always trying to balance learning
+                    with enjoying the journey.<br>
+                    This site is my little corner to share photos, memories, and experiences throughout my poly life
+                    (^◕.◕^).<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row g-4">
+
+
+            <div class="text-center">
+                <!-- Technical Skills -->
+                <h3 class="mb-2 fw-bold">My Skills</h3>
+                <span class="badge bg-primary fs-6 m-1">HTML</span>
+                <span class="badge bg-success fs-6 m-1">CSS</span>
+                <span class="badge bg-warning text-dark fs-6 m-1">JavaScript</span>
+                <span class="badge bg-info text-dark fs-6 m-1">Bootstrap</span>
+                <span class="badge bg-danger fs-6 m-1">Java</span>
+                <span class="badge bg-secondary fs-6 m-1">Database Basics</span>
+            </div>
+
+            <!-- First Column -->
+            <h3 class="mb-2 fw-bold text-center">My Project</h3>
+            <div class="col">
+                <div class="p-5 bg-light text-center fs-5 shadow">
+                    <img src="images/firstdayp.jpg" class="img-fluid rounded mb-2" alt="Aktiviti 1">
+                    <p>
+                        Day one at PoliKu<br>
+                        the beginning of a whole new chapter in my student life!
+                    </p>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col">
+                <div class="p-5 bg-light text-center fs-5 shadow">
+                    <img src="images/akjme.jpg" class="img-fluid rounded mb-2" alt="Aktiviti 2">
+                    <p>
+                        A proud moment on stage<br>
+                        receiving the award certificate for my hard work and dedication.
+                    </p>
+                </div>
+            </div>
+            <!-- Third Column -->
+            <div class="col">
+                <div class="p-5 bg-light text-center fs-5 shadow">
+                    <img src="images/gmbajual.jpg" class="img-fluid rounded mb-2" alt="Aktiviti 2">
+                    <p>
+                        Teamwork makes the dream work! Unforgettable moments as a seller<br>
+                        full of laughter, effort, and sweet memories together. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-light text-center text-white mt-5">
+        <!-- Social media section -->
+        <div class="container pt-4">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color:#3b5998"
+                    href="https://www.facebook.com/" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color:#ed1960"
+                    href="https://www.tiktok.com/@nrshzaa?_t=ZS-8zRxZUcHZsQ&_r=1" role="button">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <!-- Email -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color:#dd4b39"
+                    href="https://www.google.com/" role="button">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color:#ac2bac"
+                    href="https://www.instagram.com/nshzaa_?igsh=MXIzbHJkaTV5NW11" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Telegram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color:#0082ca"
+                    href="https://www.linkedin.com/" role="button">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+            © 2025 Nur Shyafiza Adyawiah:
+            <a class="text-white">All rights reserved</a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons (for social buttons)-->
+    <script src="https://kit.fontawesome.com/a075=6076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle JS (placed before </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
